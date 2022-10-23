@@ -51,7 +51,7 @@ python3 tools/process_dataset.py --dataset Camelyon16 --task download convert sp
 Following instructions in [unitopatho](https://ieee-dataport.org/open-access/unitopatho) to download the original dataset. We use the data in the `800` folder. To prepare datasets for contrastive learning, we first crop UniToPatho images for pre-training and downstream MIL tasks, and gather related meta files. To do so, run:
 
 ```shell
-python3 tools/process_dataset.py --dataset UniToPatho --task crop split
+python3 tools/process_dataset.py --dataset Unitopatho --task crop split
 ```
 
 ### Self-supervised Learning

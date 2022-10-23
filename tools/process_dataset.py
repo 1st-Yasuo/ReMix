@@ -164,6 +164,8 @@ def split_unitopatho(download_dir):
     test_list_txt = open('datasets/Unitopatho/remix_processed/test_list.txt', 'w')
     train_files = glob.glob(f'{train_bag_pth}/*.txt')
     test_files = glob.glob(f'{test_bag_pth}/*.txt')
+    # sort file list by name
+    train_files, test_files = np.sort(train_files), np.sort(test_files)
     train_labels, test_labels = [], []
     for f_name in train_files:
         f_name = f_name.split('/')[-1].replace('txt', 'npy')
